@@ -1,8 +1,10 @@
 <?php
-// Development = 1, production = anything else
-$devOrProd = 1;
 
-if ($devOrProd == 1)
+define ("DEV", 0);
+define ("PROD", 1);
+$devOrProd = DEV;
+
+if ($devOrProd == DEV)
 { // If development, enter data from your local settings
     // URL from localhost
     define("URL", "http://localhost/mywebsite");
